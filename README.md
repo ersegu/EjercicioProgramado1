@@ -1,2 +1,2 @@
-# EjercicioProgramado1
-Ejercicio Programado 1 - Introduccion a la Programacion.
+# Ejercicio Programado 1
+## Introduccion a la Programacion.
