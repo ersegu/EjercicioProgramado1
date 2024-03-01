@@ -36,25 +36,35 @@ public class EjercicioProgramado1 {
         
         if (respuesta==true) {
             JOptionPane.showMessageDialog(null, "Nombre del estudiante ingresado con exito.");
+        } else {
+            calif1.setNombreEstudiante(JOptionPane.showInputDialog(null, "Error: Por favor brindar el nombre del estudiante"));
+        
         }
         
-        JOptionPane.showMessageDialog(null, calif1.getNombreEstudiante());
+        JOptionPane.showMessageDialog(null, "El nombre del estudiante es: "+calif1.getNombreEstudiante());
+        
         
         respuesta=calif1.setNombreProfesor("");
         
         if (respuesta==true) {
             JOptionPane.showMessageDialog(null, "Nombre del profesor ingresado con exito.");
+        }else {
+            calif1.setNombreProfesor(JOptionPane.showInputDialog(null, "Error: Por favor brindar el nombre del profesor"));
+        
         }
         
-        JOptionPane.showMessageDialog(null, calif1.getNombreProfesor());
+        JOptionPane.showMessageDialog(null, "El nombre del profesor es: "+calif1.getNombreProfesor());
         
         respuesta=calif1.setCurso("");
         
         if (respuesta==true) {
             JOptionPane.showMessageDialog(null, "Curso ingresado con exito.");
+        } else {
+            calif1.setCurso(JOptionPane.showInputDialog(null, "Error: Por favor brindar el nombre del curso"));
+        
         }
         
-        JOptionPane.showMessageDialog(null, calif1.getCurso());
+        JOptionPane.showMessageDialog(null, "El nombre del curso es: "+calif1.getCurso());
         
         respuesta=calif1.setCalificacion(85);
         
@@ -62,7 +72,7 @@ public class EjercicioProgramado1 {
             JOptionPane.showMessageDialog(null, "Nota ingresada con exito.");
         }
         
-        JOptionPane.showMessageDialog(null, calif1.getNombreEstudiante());
+        JOptionPane.showMessageDialog(null, "La calificacion del estudiante es: "+calif1.getCalificacion());
         
         //OBJETO 2
         
@@ -70,25 +80,35 @@ public class EjercicioProgramado1 {
         
         if (respuesta==true) {
             JOptionPane.showMessageDialog(null, "Nombre del estudiante ingresado con exito.");
+        } else {
+            calif2.setNombreEstudiante(JOptionPane.showInputDialog(null, "Error: Por favor brindar el nombre del estudiante"));
+        
         }
         
-        JOptionPane.showMessageDialog(null, calif2.getNombreEstudiante());
+        JOptionPane.showMessageDialog(null, "El nombre del estudiante es: "+calif2.getNombreEstudiante());
+        
         
         respuesta=calif2.setNombreProfesor("");
         
         if (respuesta==true) {
             JOptionPane.showMessageDialog(null, "Nombre del profesor ingresado con exito.");
+        }else {
+            calif2.setNombreProfesor(JOptionPane.showInputDialog(null, "Error: Por favor brindar el nombre del profesor"));
+        
         }
         
-        JOptionPane.showMessageDialog(null, calif2.getNombreProfesor());
+        JOptionPane.showMessageDialog(null, "El nombre del profesor es: "+calif2.getNombreProfesor());
         
         respuesta=calif2.setCurso("");
         
         if (respuesta==true) {
             JOptionPane.showMessageDialog(null, "Curso ingresado con exito.");
+        } else {
+            calif2.setCurso(JOptionPane.showInputDialog(null, "Error: Por favor brindar el nombre del curso"));
+        
         }
         
-        JOptionPane.showMessageDialog(null, calif2.getCurso());
+        JOptionPane.showMessageDialog(null, "El nombre del curso es: "+calif2.getCurso());
         
         respuesta=calif2.setCalificacion(85);
         
@@ -96,7 +116,7 @@ public class EjercicioProgramado1 {
             JOptionPane.showMessageDialog(null, "Nota ingresada con exito.");
         }
         
-        JOptionPane.showMessageDialog(null, calif2.getNombreEstudiante());
+        JOptionPane.showMessageDialog(null, "La calificacion del estudiante es: "+calif2.getCalificacion());
         
         
     }

@@ -21,18 +21,35 @@ public class Calificacion {
     //CONSTRUCTORES
     public Calificacion (String pEstudiante){
         
-        setNombreEstudiante(pEstudiante);
-    
+        boolean aux=setNombreEstudiante(pEstudiante);
+        while (aux==false) {
+            aux=setNombreEstudiante(pEstudiante);
+        }    
     }
     
     
     public Calificacion (String pEstudiante, String pProfesor, String pCurso, double pCalificacion){
         
-        setNombreEstudiante(pEstudiante);
-        setNombreProfesor(pProfesor);
-        setCurso(pCurso);
-        setCalificacion(pCalificacion);
-    
+        boolean aux=setNombreEstudiante(pEstudiante);
+        while (aux==false) {
+            aux=setNombreEstudiante(pEstudiante);
+        }
+        
+        aux=setNombreProfesor(pProfesor);
+        while (aux==false) {
+            aux=setNombreProfesor(pProfesor);
+        }
+        
+        
+        aux=setCurso(pCurso);
+        while (aux==false) {
+            aux=setCurso(pCurso);
+        }
+        
+        aux=setCalificacion(pCalificacion);
+        while (aux==false) {
+            aux=setCalificacion(pCalificacion);
+        }
     }
     
     //SETTERS Y GETTERS
@@ -42,10 +59,11 @@ public class Calificacion {
     public boolean setNombreEstudiante (String pNombre){
         
         if (pNombre==null||pNombre.isEmpty()||pNombre.isBlank()) {
-            setNombreEstudiante(JOptionPane.showInputDialog(null, "Por favor brindar el nombre del estudiante"));
-        } 
-            nombreEstudiante=pNombre;
-            return true;
+            return false;
+        }
+        
+        nombreEstudiante=pNombre;
+        return true;
     }
     
     public String getNombreEstudiante (){
@@ -62,7 +80,7 @@ public class Calificacion {
     public boolean setNombreProfesor (String pNombre){
         
         if (pNombre==null||pNombre.isEmpty()||pNombre.isBlank()) {
-            setNombreProfesor(JOptionPane.showInputDialog(null, "Por favor brindar el nombre del profesor"));
+            return false;
         }
         nombreProfesor=pNombre;
         return true;
@@ -82,7 +100,7 @@ public class Calificacion {
     public boolean setCurso (String pCurso){
         
         if (pCurso==null||pCurso.isEmpty()||pCurso.isBlank()) {
-            setCurso(JOptionPane.showInputDialog(null, "Por favor brindar el nombre del curso"));
+            return false;
         }
         
         curso=pCurso;
